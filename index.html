@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Map</title>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzbI4P8Meay71BuIsY5Z678DhVQDSCwx0"></script>
+    <script src="weathermap.js"></script>
+    <link href="weathermap.css" rel="stylesheet">
+  </head>
+  <body ng-app="weather-map">
+    <div id="map" class="map"></div>
+    <!-- <div class="sidebar">
+      <div
+        ng-repeat="result in results"
+        ng-click="openInfoWindow(result)"
+        >
+        {{result.name}}
+        {{result.main.temp}}°
+        <img ng-src="http://openweathermap.org/img/w/{{result.weather[0].icon}}.png"> -->
+
+        <ng-view></ng-view>
+      <!-- </div>
+    </div> -->
+  </body>
+</html>
